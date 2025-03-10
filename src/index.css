@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "CaesarDressing-Regular";
+    src: url('./assets/fonts/CaesarDressing-Regular.ttf') format("truetype");
+    font-weight: 400;
+    font-style: "normal";
+  }
