@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import NavButton from "./NavButton";
 import MobileMenuToggle from "./MobileMenuToggle";
-import Logo from "../assets/images/Logo .png"; // Adjust path as needed
+import Logo from "../assets/images/Logo .png";
 
 const Navbar: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -58,7 +58,11 @@ const Navbar: React.FC = () => {
         <div className="flex items-center justify-between w-full mt-12 md:hidden">
           {/* Logo */}
           <a href="#">
-            <img src={Logo} alt="Coq's Race Logo" className="w-[50px] h-[50px] sm:w-[60px] sm:h-[60px] " />
+            <img
+              src={Logo}
+              alt="Coq's Race Logo"
+              className="w-[50px] h-[50px] sm:w-[60px] sm:h-[60px] "
+            />
           </a>
 
           {/* Mobile Menu Button */}
@@ -67,7 +71,9 @@ const Navbar: React.FC = () => {
           {/* Mobile Menu Overlay */}
           <nav
             className={`fixed inset-0 flex flex-col items-center justify-center bg-[#263b0f] transition-opacity duration-300 z-40 ${
-              menuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+              menuOpen
+                ? "opacity-100 pointer-events-auto"
+                : "opacity-0 pointer-events-none"
             }`}
           >
             <div className="flex flex-col space-y-4">

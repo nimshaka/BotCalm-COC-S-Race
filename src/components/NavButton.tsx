@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 export interface NavButtonProps {
   label: string;
@@ -6,16 +6,16 @@ export interface NavButtonProps {
   isActive?: boolean;
   onClick?: () => void;
   className?: string;
-  variant?: 'desktop' | 'mobile';
+  variant?: "desktop" | "mobile";
 }
 
 const NavButton: React.FC<NavButtonProps> = ({
   label,
-  href = '#',
+  href = "#",
   isActive = false,
   onClick,
-  className = '',
-  variant = 'desktop'
+  className = "",
+  variant = "desktop",
 }) => {
   const desktopClasses = `
    
@@ -25,7 +25,7 @@ const NavButton: React.FC<NavButtonProps> = ({
     2xl:w-[170px] 2xl:h-[54px] 
     flex items-center justify-center 
     rounded-full 
-    ${isActive ? 'bg-[#b7ff00]' : 'bg-[#F4FFDB]'}
+    ${isActive ? "bg-[#b7ff00]" : "bg-[#F4FFDB]"}
     text-black 
     font-CaesarDressingRegular
     text-[10px] md:text-sm lg:text-base xl:text-lg 2xl:text-xl 
@@ -38,20 +38,16 @@ const NavButton: React.FC<NavButtonProps> = ({
     font-semibold 
     text-center 
     text-black 
-    ${isActive ? 'bg-[#b7ff00]' : 'bg-white'} 
+    ${isActive ? "bg-[#b7ff00]" : "bg-white"} 
     rounded-full
   `;
 
   const handleClick = (e: React.MouseEvent) => {
     if (onClick) onClick();
-    
   };
 
-  return variant === 'desktop' ? (
-    <div 
-      className={`${desktopClasses} ${className}`}
-      onClick={handleClick}
-    >
+  return variant === "desktop" ? (
+    <div className={`${desktopClasses} ${className}`} onClick={handleClick}>
       {label}
     </div>
   ) : (

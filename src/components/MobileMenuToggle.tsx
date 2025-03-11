@@ -1,13 +1,13 @@
-import React from 'react';
+import React from "react";
 
 interface MobileMenuToggleProps {
   isOpen: boolean;
   onClick: () => void;
 }
 
-const MobileMenuToggle: React.FC<MobileMenuToggleProps> = ({ 
-  isOpen, 
-  onClick 
+const MobileMenuToggle: React.FC<MobileMenuToggleProps> = ({
+  isOpen,
+  onClick,
 }) => {
   return (
     <button
