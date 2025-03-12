@@ -21,7 +21,6 @@ const Hero: React.FC = () => {
   return (
     <div className="bg-gradient-to-r from-[#1D2801] via-[#324503] to-[#1D2801] ">
       <div className="flex flex-col items-center justify-between mx-auto max-w-[1920px]">
-        
         <div className="flex  w-full  h-[72px] mt-1">
           <div className="relative w-full h-14 md:h-32">
             <div className="absolute top-0 flex justify-center md:-left-9 -left-4">
@@ -63,7 +62,7 @@ const Hero: React.FC = () => {
         </div>
 
         <div className=" h-[50px] w-full flex items-center justify-center">
-          <Navbar></Navbar>
+          {/* <Navbar></Navbar> */}
         </div>
 
         <div className="flex flex-row items-center justify-center w-full  2xl:mt-[118px]  gap-x-16 lg:mt-3 ">
@@ -81,7 +80,7 @@ const Hero: React.FC = () => {
                 <span className="inline-block text-lime-400 drop-shadow-[4px_4px_0px_#000000]">
                   COQ'S
                 </span>
-                <span className="inline-block ml-4 text-white drop-shadow-[4px_4px_0px_#000000]">
+                <span className="inline-block ml-4 text-[#FDF4DC] drop-shadow-[4px_4px_0px_#000000]">
                   RACE
                 </span>
                 <div className="absolute top-9 -left-10 2xl:top-36 2xl:-left-20 md:top-16 md:-left-12 lg:top-20 lg:-left-14 xl:-left-20">

@@ -1,7 +1,9 @@
 import MainLayout from "@/layouts/MainLayout";
+import About from "@/section/mainSection/About";
 
 import Hero from "@/section/mainSection/Hero";
 import RaceRegistration from "@/section/mainSection/RaceRegistration";
+import Tokenomics from "@/section/mainSection/Tokenomics";
 
 const Home = () => {
   return (
@@ -9,6 +11,8 @@ const Home = () => {
       <div>
         <Hero />
         <RaceRegistration/>
+        <About/>
+        <Tokenomics/>
       </div>
     </MainLayout>
   );

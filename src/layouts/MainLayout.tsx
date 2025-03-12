@@ -1,3 +1,4 @@
+
 import { LayoutProps } from "@/types/MainLayoutTypes";
 
 const MainLayout = ({ children }: LayoutProps) => {

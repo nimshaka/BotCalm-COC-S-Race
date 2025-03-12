@@ -23,8 +23,8 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 px-4 py-4 bg-transparent ">
-      <div className="flex flex-col items-center w-full">
+    <header className="z-50 px-4 py-4 bg-transparent ">
+      <div className="flex flex-col items-center w-full md:mt-[2px]">
         {/* Desktop Navigation */}
         <div className="flex-col items-center hidden md:flex">
           {/* Logo */}
@@ -55,7 +55,7 @@ const Navbar: React.FC = () => {
         </div>
 
         {/* Mobile Navigation */}
-        <div className="flex items-center justify-between w-full mt-12 md:hidden">
+        <div className="fixed left-0 right-0 flex items-center justify-between w-full -mt-10 md:hidden">
           {/* Logo */}
           <a href="#">
             <img

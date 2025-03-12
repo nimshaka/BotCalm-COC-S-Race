@@ -7,14 +7,20 @@ import Cock2 from "../../assets/images/Cock2.png";
 import Map2 from "../../assets/images/map2.webp";
 import Cock3 from "../../assets/images/Cock3.png";
 import Tree2 from "../../assets/images/Tree2.png";
+import Track from "../../assets/images/racing_track3.webp";
+import Track2 from "../../assets/images/racing_track4.png";
 
 export default function RaceRegistration() {
   return (
-    <div className="bg-gradient-to-r from-[#1D2801] via-[#324503] to-[#1D2801] mx-auto max-w-[1920px] flex">
-      <div className="flex flex-col w-full mt-[50px]  md:flex-row 2xl:mt-[220px] ">
+    <div className="bg-gradient-to-r from-[#1D2801] via-[#324503] to-[#1D2801] mx-auto max-w-[1920px] flex flex-col">
+      <div className="flex flex-col w-full mt-[50px]  md:flex-row 2xl:mt-[220px] md:mt-[120px]">
         {/* Tree */}
         <div className="items-center justify-center hidden md:flex">
-          <img src={Tree2} alt="Tree" className="2xl:w-[223px] 2xl:h-[427px] mt-16" />
+          <img
+            src={Tree2}
+            alt="Tree"
+            className="2xl:w-[223px] 2xl:h-[427px] mt-16"
+          />
         </div>
         {/* Tree */}
 
@@ -27,7 +33,7 @@ export default function RaceRegistration() {
               </p>
             </div>
             <div className="flex items-start space-x-5">
-              <span className=" text-white drop-shadow-[4px_4px_0px_#000000] ">
+              <span className=" text-[#FDF4DC] drop-shadow-[4px_4px_0px_#000000] ">
                 COC'S RACE ?
               </span>
               <span className=" text-lime-400 drop-shadow-[4px_4px_0px_#000000] ">
@@ -49,7 +55,7 @@ export default function RaceRegistration() {
                 <input
                   type="text"
                   placeholder="ENTER TOKEN ADDRESS"
-                  className="flex px-4 text-[16px]  uppercase placeholder-[#FDF4DC]  bg-transparent outline-none text-[#FDF4DC] md:text-[20px]"
+                  className="flex px-4 text-[16px]  uppercase placeholder-[#FDF4DC]  bg-transparent outline-none text-[#FDF4DC] drop-shadow-[4px_4px_0px_#000000] md:text-[20px]"
                 />
                 <button className="text-[#FDF4DC] transition-colors bg-[#EB2D26] border-[#151D00] rounded-full w-[87px] h-[58px] mr-1 border-4 2xl:w-[207px] 2xl:h-[67px] text-[16px] md:text-[20px]">
                   BUY
@@ -60,7 +66,7 @@ export default function RaceRegistration() {
 
             {/* Icons */}
 
-            <div className="flex flex-row justify-center space-x-2 text-nowrap text-[#FDF4DC] text-[10px] 2xl:text-[16px] font-CaesarDressingRegular 2xl:gap-[50px] mt-[10px]  lg:-translate-x-1">
+            <div className="flex flex-row justify-center space-x-2 text-nowrap text-[#FDF4DC] drop-shadow-[4px_4px_0px_#000000] text-[10px] 2xl:text-[16px] font-CaesarDressingRegular 2xl:gap-[50px] mt-[10px]  lg:-translate-x-0">
               <div className="flex items-center ">
                 <img
                   src={Point}
@@ -120,6 +126,24 @@ export default function RaceRegistration() {
           />
         </div>
         {/* Image2 */}
+      </div>
+
+      <div className="flex-col ">
+        <div className="flex flex-col items-center justify-center w-full h-auto -translate-y-40 2xl:-translate-y-24 lg:-translate-y-16 md:-translate-y-10">
+          {/* Racing Track */}
+          <div className="w-full">
+            <img src={Track} alt="Racing Track" className="hidden sm:flex" />
+
+            <img
+              src={Track2}
+              alt="Racing Track"
+              className="flex w-full sm:hidden"
+            />
+          </div>
+          {/* Racing Track */}
+
+          
+        </div>
       </div>
     </div>
   );
