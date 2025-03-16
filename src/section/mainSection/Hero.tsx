@@ -19,8 +19,10 @@ const Hero: React.FC = () => {
   }, []);
 
   return (
-    <div className="bg-gradient-to-r from-[#1D2801] via-[#324503] to-[#1D2801] ">
-      <div className="flex flex-col items-center justify-between mx-auto max-w-[1920px]">
+    <div
+      className="bg-gradient-to-r from-[#1D2801] via-[#324503] to-[#1D2801] "
+    >
+      <div className="flex flex-col items-center justify-between w-full mx-auto ">
         <div className="flex  w-full  h-[72px] mt-1">
           <div className="relative w-full h-14 md:h-32">
             <div className="absolute top-0 flex justify-center md:-left-9 -left-4">
