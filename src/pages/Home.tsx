@@ -3,6 +3,7 @@ import About from "@/section/mainSection/About";
 
 import Hero from "@/section/mainSection/Hero";
 import RaceRegistration from "@/section/mainSection/RaceRegistration";
+import RoadMap from "@/section/mainSection/RoadMap";
 import Tokenomics from "@/section/mainSection/Tokenomics";
 
 const Home = () => {
@@ -13,6 +14,7 @@ const Home = () => {
         <RaceRegistration/>
         <About/>
         <Tokenomics/>
+        <RoadMap/>
       </div>
     </MainLayout>
   );

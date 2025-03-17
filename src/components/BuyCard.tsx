@@ -1,27 +1,20 @@
 import React from "react";
 
-interface BuyCardProps {
+type CardProps = {
   title: string;
-  value: string;
-  highlight?: boolean;
-}
+  description: string;
+};
 
-const BuyCard: React.FC<BuyCardProps> = ({ title, value, highlight }) => {
+const BuyCard: React.FC<CardProps> = ({ title, description }) => {
   return (
-    <div className="relative flex items-center justify-center 
-        w-[348px] md:w-[280px] lg:w-[280px] xl:w-[360px] 2xl:w-[368px]
-        h-[171px]  md:h-[160px] lg:h-[160px] xl:h-[200px] 2xl:h-[196px] 
-        bg-[#151D00] rounded-3xl shadow-lg text-center font-CaesarDressingRegular">
-      
-      <div className="flex flex-col justify-center">
-        <p className=" text-[35px]  text-[#B5FF07] drop-shadow-[4px_4px_0px_#000000] flex justify-start">
-          {title.toUpperCase()}
-        </p>
-        <p className={`text-[14px] text-[#FDF4DC] drop-shadow-[4px_4px_0px_#000000] ${highlight ? "font-extrabold" : ""}`}>
-          {value}
-        </p>
+    
+    <div className=" flex items-center justify-center   shadow-2xl transition-shadow hover:drop-shadow-[0_0_20px_#B5FF07] md:pb-4 ">
+      <div className="2xl:p-10 xl:p-4 text-center bg-[#151D00] rounded-3xl w-[368px] h-[206px] md:w-[150px] md:h-[200px] lg:w-[200px] lg:h-[200px] xl:w-[260px] xl:h-[196px] 2xl:w-[368px] 2xl:h-[196px]m lg:p-5 p-10 md:p-1">
+        <h2 className="2l:text-[35px] text-lime-400 drop-shadow-[4px_4px_0px_#000000] font-CaesarDressingRegular 2xl:text-left md:text-[30px] md:text-center xl:text-left xl:text-[35px] text-left text-[35px]">{title}</h2>
+        <p className="font-CaesarDressingRegular text-[#FDF4DC] drop-shadow-[4px_4px_0px_#000000] text-[14px] md:text-[12px] text-left md:text-center xl:text-left xl:text-[14px]">{description}</p>
       </div>
     </div>
+    
   );
 };
 

@@ -5,7 +5,7 @@ import CardSlider from "@/components/CardSlider";
 
 export default function About() {
   return (
-    <div className="bg-gradient-to-r from-[#1D2801] via-[#324503] to-[#1D2801] mx-auto  flex-col max-w-[1920px]">
+    <div className="bg-gradient-to-r from-[#1D2801] via-[#324503] to-[#1D2801] mx-auto  flex-col max-w-[1920px]   md:h-auto  ">
       <div className="flex flex-col items-center justify-center w-full mt-0 -translate-y-32 md:flex-row md:-translate-y-0 max-w-[1920px]">
         {/* About */}
         <div className="2xl:w-[1198px] 2xl:h-[388px] xl:w-[800px] xl:h-[360px] lg:w-[730px] lg:h-[300px] md:w-[620px] md:h-[250px] bg-[#151D00] flex w-[358px] h-[468px] rounded-3xl text-center text-white font-CaesarDressingRegular ">
@@ -47,9 +47,9 @@ export default function About() {
       </div>
 
       {/* Coc section */}
-      <div className="flex flex-col -translate-y-40  md:-translate-y-0 md:mt-[100px] items-center md:items-start">
+      <div className="flex flex-col -translate-y-40  md:-translate-y-0 md:mt-[100px] items-center md:items-start ">
         {/* Text */}
-        <div className="flex  md:ml-[100px] font-CaesarDressingRegular">
+        <div className="flex  md:ml-[100px] font-CaesarDressingRegular ">
           <h2 className="2xl:text-[64px] xl:text-[60px] lg:text-[50px] md:text-[45px] text-[#FDF4DC] drop-shadow-[4px_4px_0px_#000000] text-[40px]">
             Creater your own{" "}
             <span className="ml-2 text-[#B5FF07] drop-shadow-[4px_4px_0px_#000000]">
@@ -62,7 +62,7 @@ export default function About() {
         {/* Coc section */}
         <div className="2xl:w-[1718px] flex border items-start justify-start md:ml-[100px]">
           {/* <CardSlider /> */}{" "}
-          <div>
+          <div className="">
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
             accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
             quae ab illo inventore veritatis et quasi architecto beatae vitae

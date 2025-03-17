@@ -23,6 +23,7 @@ module.exports = {
       },
     fontFamily: {
       CaesarDressingRegular: ["CaesarDressing-Regular", "san-serif"],
+      TsukimiRoundedRegular: ["TsukimiRounded-Regular", "san-serif"],
      
     },
     extend: {

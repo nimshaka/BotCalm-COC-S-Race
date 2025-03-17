@@ -34,12 +34,15 @@ const NavButton: React.FC<NavButtonProps> = ({
   `;
 
   const mobileClasses = `
-    px-6 py-2 
-    font-semibold 
-    text-center 
+    w-[181px] h-[59px] 
+    flex items-center justify-center 
+    rounded-full 
+    ${isActive ? "bg-[#b7ff00]" : "bg-[#F4FFDB]"}
     text-black 
-    ${isActive ? "bg-[#b7ff00]" : "bg-white"} 
-    rounded-full
+    font-CaesarDressingRegular
+    text-[16px] md:text-sm lg:text-base xl:text-lg 2xl:text-xl 
+    border-4 border-black 
+    cursor-pointer
   `;
 
   const handleClick = (e: React.MouseEvent) => {
