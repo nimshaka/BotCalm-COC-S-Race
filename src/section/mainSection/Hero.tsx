@@ -64,7 +64,7 @@ const Hero: React.FC = () => {
         </div>
 
         <div className=" h-[50px] w-full flex items-center justify-center">
-          {/* <Navbar></Navbar> */}
+          <Navbar></Navbar>
         </div>
 
         <div className="flex flex-row items-center justify-center w-full  2xl:mt-[118px]  gap-x-16 lg:mt-3 ">
@@ -116,7 +116,7 @@ const Hero: React.FC = () => {
             <img
               src={Cock}
               alt="Cock"
-              className="  2xl:w-[374px] 2xl:h-[581px] "
+              className="  2xl:w-[374px] 2xl:h-[581px] md:mt-10 2xl:-mt-6"
             />
           </div>
         </div>

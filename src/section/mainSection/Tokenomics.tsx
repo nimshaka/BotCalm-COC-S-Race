@@ -15,13 +15,13 @@ export default function Tokenomics() {
       <div className="md:absolute bg-gradient-to-r from-[#1D2801]/95 via-[#324503]/95 to-[#1D2801]/95 top-0 left-0 right-0 bottom-0 md:flex md:justify-center overflow-hidden ">
         <div className="flex flex-col overflow-hidden">
           <div className="flex flex-col overflow-hidden  md:mt-[129px]  ">
-            <div className="font-CaesarDressingRegular 2xl:text-[74px] flex  text-[40px] justify-center md:justify-start">
+            <div className="font-CaesarDressingRegular 2xl:text-[74px] flex  text-[40px] justify-center md:justify-start md:px-4  mt-[50px] md:mt-0">
               <p className="text-[#FDF4DC] drop-shadow-[4px_4px_0px_#000000]">
                 TOKENOMICS
               </p>
             </div>
 
-            <div className="flex flex-col items-center justify-center space-x-1  md:flex-row mt-[50px]">
+            <div className="flex flex-col items-center justify-center space-x-1  md:flex-row mt-[50px] md:p-2 2xl:p-0">
               <TaxCard title="Buy Tax" value="0%" />
               <Connector />
               <TaxCard title="Sell Tax" value="0%" />
@@ -31,7 +31,7 @@ export default function Tokenomics() {
           </div>
 
           <div className="flex flex-col   md:mt-[100px] mt-[50px]">
-            <div className="font-CaesarDressingRegular 2xl:text-[74px] flex  text-[40px] justify-center md:justify-start">
+            <div className="font-CaesarDressingRegular 2xl:text-[74px] flex  text-[40px] justify-center md:justify-start md:px-4 ">
               <p className="text-[#FDF4DC] drop-shadow-[4px_4px_0px_#000000]">
                 HOW TO BUY
               </p>

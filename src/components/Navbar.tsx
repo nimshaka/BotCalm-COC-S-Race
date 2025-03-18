@@ -9,7 +9,7 @@ const Navbar: React.FC = () => {
 
   const navItems = [
     { label: "HOME", key: "HOME", href: "#home" },
-    { label: "ABOUT US", key: "ABOUT", href: "#about" },
+    { label: "ABOUT US", key: "about", href: "#about" },
     { label: "TOKENOMICS", key: "TOKENOMICS", href: "#tokenomics" },
     { label: "HOW TO BUY", key: "HOWTOBUY", href: "#how-to-buy" },
     { label: "ROAD MAP", key: "ROADMAP", href: "#roadmap" },
@@ -23,12 +23,12 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <header className="z-50 px-4 py-4 bg-transparent ">
-      <div className="flex flex-col items-center w-full md:mt-[2px]">
+    <header className="z-50 w-full px-4 py-4 bg-transparent">
+      <div className="flex flex-col items-center w-full lg:mt-[10px]  md:-mt-2 2xl:mt-0 ">
         {/* Desktop Navigation */}
         <div className="flex-col items-center hidden md:flex">
           {/* Logo */}
-          <div className="mb-2">
+          <div className="mb-2 md:mb-0">
             <img
               src={Logo}
               alt="Coq's Race Logo"
@@ -55,7 +55,7 @@ const Navbar: React.FC = () => {
         </div>
 
         {/* Mobile Navigation */}
-        <div className="fixed left-0 right-0 flex items-center justify-between w-full -mt-10 md:hidden">
+        <div className="flex justify-between w-full 2-mt-10 md:hidden">
           {/* Logo */}
           <a href="#">
             <img
@@ -66,7 +66,7 @@ const Navbar: React.FC = () => {
           </a>
 
           {/* Mobile Menu Button */}
-          <MobileMenuToggle isOpen={menuOpen} onClick={toggleMenu} />
+          <MobileMenuToggle isOpen={menuOpen} onClick={toggleMenu}  />
 
           {/* Mobile Menu Overlay */}
           <nav
