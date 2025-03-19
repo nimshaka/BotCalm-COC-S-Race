@@ -34,9 +34,10 @@ export default function RoadMap() {
   ];
 
   return (
+    <section id="roadmap">
     <div className="bg-[#151D00] mx-auto max-w-[1920px] flex flex-col items-center mt-10">
       <div className="flex  font-CaesarDressingRegular 2xl:mt-[73px] mt-[45px]">
-        <p className="text-[#FDF4DC] drop-shadow-[4px_4px_0px_#000000] 2xl:text-[74px] text-[40px]">
+        <p className="text-[#FDF4DC] drop-shadow-[4px_4px_0px_#000000] 2xl:text-[74px] text-[40px] animate-bounce">
           get connected
         </p>
       </div>
@@ -123,5 +124,6 @@ export default function RoadMap() {
         </p>
       </div>
     </div>
+    </section>
   );
 }

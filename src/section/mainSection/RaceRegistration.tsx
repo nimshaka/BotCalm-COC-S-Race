@@ -12,6 +12,7 @@ import Track2 from "../../assets/images/racing_track4.png";
 
 export default function RaceRegistration() {
   return (
+    <section id="how-to-buy">
     <div className="bg-gradient-to-r from-[#1D2801] via-[#324503] to-[#1D2801] mx-auto max-w-[1920px] flex flex-col">
       <div className="flex flex-col w-full mt-[50px]  md:flex-row 2xl:mt-[220px] md:mt-[120px]">
         {/* Tree */}
@@ -28,15 +29,15 @@ export default function RaceRegistration() {
         <div className="flex flex-col items-center 2xl:-translate-x-5 2xl:-translate-y-8">
           <div className="text-[38px] font-CaesarDressingRegular  2xl:text-[74px] text-nowrap md:text-[34px] lg:text-[38px]">
             <div className="flex justify-center ">
-              <p className="text-[#FDF4DC] drop-shadow-[4px_4px_0px_#000000]">
+              <p className="text-[#FDF4DC] drop-shadow-[4px_4px_0px_#000000] ">
                 WANNA REGISTER WITH
               </p>
             </div>
             <div className="flex items-start space-x-5">
-              <span className=" text-[#FDF4DC] drop-shadow-[4px_4px_0px_#000000] ">
+              <span className=" text-[#FDF4DC] drop-shadow-[4px_4px_0px_#000000]  ">
                 COC'S RACE ?
               </span>
-              <span className=" text-lime-400 drop-shadow-[4px_4px_0px_#000000] ">
+              <span className=" text-lime-400 drop-shadow-[4px_4px_0px_#000000] animate-bounce ">
                 LET'S JOIN
               </span>
             </div>
@@ -146,5 +147,6 @@ export default function RaceRegistration() {
         </div>
       </div>
     </div>
+    </section>
   );
 }

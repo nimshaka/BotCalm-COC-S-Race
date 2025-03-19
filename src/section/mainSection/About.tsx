@@ -12,7 +12,7 @@ export default function About() {
         {/* About */}
         <div className="2xl:w-[1198px] 2xl:h-[388px] xl:w-[800px] xl:h-[360px] lg:w-[730px] lg:h-[300px] md:w-[620px] md:h-[250px] bg-[#151D00] flex w-[358px] h-[468px] rounded-3xl text-center text-white font-CaesarDressingRegular ">
           <div className="2xl:w-[673px] 2xl:h-[309px] xl:w-[600px] xl:h-[320px] lg:w-[550px] lg:h-[260px] md:w-[500px] md:h-[240px] mx-auto text-center p-[37px] lg:p-[20px] md:p-[8px]">
-            <h2 className="mb-4 2xl:text-[74px] xl:text-[60px] lg:text-[50px] md:text-[45px] text-[#FDF4DC] drop-shadow-[4px_4px_0px_#000000] text-[40px]">
+            <h2 className="mb-4 2xl:text-[74px] xl:text-[60px] lg:text-[50px] md:text-[45px] text-[#FDF4DC] drop-shadow-[4px_4px_0px_#000000] text-[40px]  ">
               ABOUT{" "}
               <span className="text-lime-400 drop-shadow-[4px_4px_0px_#000000]">
                 COQ
@@ -78,6 +78,6 @@ export default function About() {
         <MarqueeCard />
       </div>
     </div>
-  </section>
+   </section>
   )
 }

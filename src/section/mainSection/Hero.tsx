@@ -19,6 +19,7 @@ const Hero: React.FC = () => {
   }, []);
 
   return (
+    <section id="home">
     <div
       className="bg-gradient-to-r from-[#1D2801] via-[#324503] to-[#1D2801] "
     >
@@ -79,7 +80,7 @@ const Hero: React.FC = () => {
           <div className="flex flex-col items-center 2xl:-mt-16 md:mt-10">
             <div className="flex items-center justify-center">
               <h1 className="flex font-CaesarDressingRegular text-[60px] relative 2xl:text-[160px] md:text-[80px] lg:text-[100px] xl:text-[120px]">
-                <span className="inline-block text-lime-400 drop-shadow-[4px_4px_0px_#000000]">
+                <span className="inline-block text-lime-400 drop-shadow-[4px_4px_0px_#000000] animate-bounce">
                   COQ'S
                 </span>
                 <span className="inline-block ml-4 text-[#FDF4DC] drop-shadow-[4px_4px_0px_#000000]">
@@ -135,6 +136,7 @@ const Hero: React.FC = () => {
         </div>
       </div>
     </div>
+    </section>
   );
 };
 

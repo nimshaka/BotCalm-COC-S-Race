@@ -1,15 +1,19 @@
-import React, { useState } from "react";
+
 import NavButton from "./NavButton";
 import MobileMenuToggle from "./MobileMenuToggle";
 import Logo from "../assets/images/Logo .png";
+import { FC, useEffect, useState } from "react";
 
 const Navbar: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeTab, setActiveTab] = useState("HOME");
+  
+
+  
 
   const navItems = [
     { label: "HOME", key: "HOME", href: "#home" },
-    { label: "ABOUT US", key: "about", href: "#about" },
+    { label: "ABOUT US", key: "ABOUT", href: "#about" },
     { label: "TOKENOMICS", key: "TOKENOMICS", href: "#tokenomics" },
     { label: "HOW TO BUY", key: "HOWTOBUY", href: "#how-to-buy" },
     { label: "ROAD MAP", key: "ROADMAP", href: "#roadmap" },
@@ -22,6 +26,7 @@ const Navbar: React.FC = () => {
     setMenuOpen(false);
   };
 
+ 
   return (
     <header className="z-50 w-full px-4 py-4 bg-transparent">
       <div className="flex flex-col items-center w-full lg:mt-[10px]  md:-mt-2 2xl:mt-0 ">

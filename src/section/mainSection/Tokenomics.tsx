@@ -6,6 +6,7 @@ import BuyCard from "@/components/BuyCard";
 
 export default function Tokenomics() {
   return (
+    <section id="tokenomics">
     <div className="relative bg-gradient-to-r from-[#1D2801] via-[#324503] to-[#1D2801]   md:mt-[100px] overflow-hidden  max-w-[1920px] mx-auto">
       <img
         src={Background}
@@ -16,7 +17,7 @@ export default function Tokenomics() {
         <div className="flex flex-col overflow-hidden">
           <div className="flex flex-col overflow-hidden  md:mt-[129px]  ">
             <div className="font-CaesarDressingRegular 2xl:text-[74px] flex  text-[40px] justify-center md:justify-start md:px-4  mt-[50px] md:mt-0">
-              <p className="text-[#FDF4DC] drop-shadow-[4px_4px_0px_#000000]">
+              <p className="text-[#FDF4DC] drop-shadow-[4px_4px_0px_#000000] animate-pulse">
                 TOKENOMICS
               </p>
             </div>
@@ -32,7 +33,7 @@ export default function Tokenomics() {
 
           <div className="flex flex-col   md:mt-[100px] mt-[50px]">
             <div className="font-CaesarDressingRegular 2xl:text-[74px] flex  text-[40px] justify-center md:justify-start md:px-4 ">
-              <p className="text-[#FDF4DC] drop-shadow-[4px_4px_0px_#000000]">
+              <p className="text-[#FDF4DC] drop-shadow-[4px_4px_0px_#000000] animate-pulse">
                 HOW TO BUY
               </p>
             </div>
@@ -99,5 +100,6 @@ export default function Tokenomics() {
         </div>
       </div>
     </div>
+    </section>
   );
 }

@@ -10,11 +10,11 @@ const Home = () => {
   return (
     <MainLayout>
       <div>
-        <Hero />
-        <RaceRegistration/>
-        <About/>
-        <Tokenomics/>
-        <RoadMap/>
+        <section id="HOME"> <Hero /></section>
+        <section id="HOWTOBUY"><RaceRegistration/></section>
+        <section id="ABOUT"><About/></section>
+        <section id="TOKENOMICS"><Tokenomics/></section>
+        <section id="ROADMAP"><RoadMap/></section>
       </div>
     </MainLayout>
   );
