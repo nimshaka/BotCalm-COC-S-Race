@@ -1,13 +1,13 @@
-import FooterMarquee from "@/components/FooterMarquee";
+
 import NavButton from "@/components/NavButton";
-import React, { useState } from "react";
+import  { useState } from "react";
 import Telegram from "../../assets/images/Telegram2.png";
 import SpaceX from "../../assets/images/SpaceX2.png";
 import DexTool from "../../assets/images/DexTools.png";
 import Marquee from "react-fast-marquee";
 
 export default function RoadMap() {
-  const [menuOpen, setMenuOpen] = useState(false);
+  //const [ setMenuOpen] = useState(false);
   const [activeTab, setActiveTab] = useState("HOME");
 
   const navItems = [
@@ -20,7 +20,7 @@ export default function RoadMap() {
 
   const handleTabClick = (key: string) => {
     setActiveTab(key);
-    setMenuOpen(false);
+    //setMenuOpen(false);
   };
 
   const greenBlocks = Array(30).fill(null);
@@ -124,6 +124,8 @@ export default function RoadMap() {
         </p>
       </div>
     </div>
+
+    
     </section>
   );
 }

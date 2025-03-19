@@ -12,12 +12,12 @@ const SocialIcons = () => {
   ];
 
   return (
-    <div className="flex  gap-[10px] 2xl:gap-[50px] md:gap-[15px] lg:gap-[20px] xl:gap-[25px]">
+    <div className="flex  gap-[10px] 2xl:gap-[50px] md:gap-[15px] lg:gap-[20px] xl:gap-[25px] ">
       {icons.map((icon, index) => (
         <a
           key={index}
           href="#"
-          className="relative flex items-center justify-center w-[62px] h-[62px] bg-black rounded-full 2xl:w-[90px] 2xl:h-[90px] md:w-[64px] md:h-[64px] lg:h-[68px] lg:w-[68px] xl:w-[72px] xl:h-[72px]"
+          className="relative flex items-center justify-center w-[62px] h-[62px] bg-black rounded-full 2xl:w-[90px] 2xl:h-[90px] md:w-[64px] md:h-[64px] lg:h-[68px] lg:w-[68px] xl:w-[72px] xl:h-[72px] hover:scale-90"
         >
           {/* Inner Green Border */}
           <div className="absolute w-[87%] h-[87%] rounded-full border-4 border-[#B5FF07]"></div>

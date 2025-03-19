@@ -4,7 +4,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Pagination, Navigation } from "swiper/modules";
 import Cock1 from "../assets/images/chicken_head1.png";
 import Cock2 from "../assets/images/chicken_head2.png";
 import Cock3 from "../assets/images/chicken_head3.png";
@@ -23,7 +22,7 @@ type CardProps = {
 
 const CockCard: React.FC<CardProps> = ({ cockImages }) => {
   return (
-    <div className="relative overflow-hidden 2xl:w-[318px] 2xl:h-[330px] flex w-[226px] h-[220px] sm:w-[230px] sm:h-[225px] md:w-[240px] md:h-[235px] lg:w-[260px] lg:h-[270px] xl:w-[290px] xl:h-[310px]">
+    <div className="relative overflow-hidden cursor-pointer 2xl:w-[318px] 2xl:h-[330px] flex w-[226px] h-[220px] sm:w-[230px] sm:h-[225px] md:w-[240px] md:h-[235px] lg:w-[260px] lg:h-[270px] xl:w-[290px] xl:h-[310px]">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-center bg-cover rounded-3xl"
@@ -43,9 +42,8 @@ const CockCard: React.FC<CardProps> = ({ cockImages }) => {
       </div>
 
       {/* Floating Button */}
-      <button className="absolute flex items-center justify-center w-[51px] h-[51px] transition rounded-full shadow-lg bottom-0 md:right-0 bg-[#151D00] hover:bg-[#B5FF07] 2xl:w-[72px] 2xl:h-[72px] -right-0 xl:right-0 lg:right-1 md:w-[50px] md:h-[50px] lg:w-[60px] lg:h-[60px] 
-  xl:w-[65px] xl:h-[65px] ">
-       <img src={Arrow} alt="arrow" className="w-[21px] h-[21px] md:h-[30px] md:w-[30px]" />
+      <button className="absolute flex items-center justify-center w-[51px] h-[51px] transition rounded-full shadow-lg bottom-0 md:right-0 bg-[#151D00] hover:bg-[#B5FF07] 2xl:w-[72px] 2xl:h-[72px] -right-0 xl:right-0 lg:right-1 md:w-[50px] md:h-[50px] lg:w-[60px] lg:h-[60px] xl:w-[65px] xl:h-[65px] hover:scale-90">
+        <img src={Arrow} alt="arrow" className="w-[21px] h-[21px] md:h-[30px] md:w-[30px]" />
       </button>
     </div>
   );
@@ -106,7 +104,7 @@ const CockCardSlider = () => {
             500: { slidesPerView: 2 },
             768: { slidesPerView: 3 },
             1024: { slidesPerView: 3 },
-            14: { slidesPerView: 3 },
+          
           }}
           modules={[]}
           className="w-full max-w-screen-lg mx-auto"

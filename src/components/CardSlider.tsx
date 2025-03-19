@@ -4,7 +4,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
-import CockCard from "./CockCard"; // Import the Card component
+//import CockCard from "./CockCard"; // Import the Card component
 import Cock1 from '../assets/images/chicken_head1.png'
 import Cock2 from '../assets/images/chicken_head2.png'
 import Cock3 from '../assets/images/chicken_head3.png'
@@ -37,9 +37,9 @@ const CardSlider: React.FC = () => {
         }}
         className="pb-6"
       >
-        {images.map((img, index) => (
+        {images.map((_, index) => (
           <SwiperSlide key={index}>
-            <CockCard imageSrc={img.src} altText={img.alt} />
+            {/* //<CockCard imageSrc={img.src} altText={img.alt} /> */}
           </SwiperSlide>
         ))}
       </Swiper>

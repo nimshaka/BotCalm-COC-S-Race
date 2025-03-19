@@ -31,6 +31,7 @@ const NavButton: React.FC<NavButtonProps> = ({
     border-4 border-black 
     cursor-pointer
     transition duration-300
+    hover:scale-110
   `;
 
   const mobileClasses = `
@@ -44,6 +45,7 @@ const NavButton: React.FC<NavButtonProps> = ({
     border-4 border-black 
     cursor-pointer
     transition duration-300
+    hover:scale-110
   `;
 
   const handleClick = (e: React.MouseEvent) => {

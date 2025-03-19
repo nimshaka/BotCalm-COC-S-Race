@@ -6,7 +6,6 @@ interface MobileMenuToggleProps {
 }
 
 const MobileMenuToggle: React.FC<MobileMenuToggleProps> = ({
-  isOpen,
   onClick,
 }) => {
   return (

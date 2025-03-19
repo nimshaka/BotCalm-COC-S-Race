@@ -2,7 +2,7 @@
 import NavButton from "./NavButton";
 import MobileMenuToggle from "./MobileMenuToggle";
 import Logo from "../assets/images/Logo .png";
-import { FC, useEffect, useState } from "react";
+import {useState } from "react";
 
 const Navbar: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);

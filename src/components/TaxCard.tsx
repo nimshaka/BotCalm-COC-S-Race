@@ -11,7 +11,7 @@ const TaxCard: React.FC<TaxCardProps> = ({ title, value, highlight }) => {
     <div className="relative flex items-center justify-center 
         w-[348px] md:w-[250px] lg:w-[280px] xl:w-[360px] 2xl:w-[512px]
         h-[171px]  md:h-[160px] lg:h-[160px] xl:h-[200px] 2xl:h-[254px] 
-        bg-[#506D05] rounded-3xl shadow-lg text-center font-CaesarDressingRegular">
+        bg-[#506D05] rounded-3xl shadow-lg text-center font-CaesarDressingRegular hover:scale-90">
       
       <div className="flex flex-col items-center">
         <p className=" text-[22px] text-[#FDF4DC] drop-shadow-[4px_4px_0px_#000000]">
