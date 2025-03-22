@@ -1,15 +1,11 @@
-
 import NavButton from "./NavButton";
 import MobileMenuToggle from "./MobileMenuToggle";
 import Logo from "../assets/images/Logo .png";
-import {useState } from "react";
+import { useState } from "react";
 
 const Navbar: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeTab, setActiveTab] = useState("HOME");
-  
-
-  
 
   const navItems = [
     { label: "HOME", key: "HOME", href: "#home" },
@@ -26,7 +22,6 @@ const Navbar: React.FC = () => {
     setMenuOpen(false);
   };
 
- 
   return (
     <header className="z-50 w-full px-4 py-4 bg-transparent">
       <div className="flex flex-col items-center w-full lg:mt-[10px]  md:-mt-2 2xl:mt-0 ">
@@ -71,16 +66,24 @@ const Navbar: React.FC = () => {
           </a>
 
           {/* Mobile Menu Button */}
-          <MobileMenuToggle isOpen={menuOpen} onClick={toggleMenu}  />
+          <MobileMenuToggle isOpen={menuOpen} onClick={toggleMenu} />
 
           {/* Mobile Menu Overlay */}
           <nav
-            className={`fixed inset-0 flex flex-col items-center justify-center bg-[#263b0f] transition-opacity duration-300 z-40 ${
+            className={`fixed inset-0 flex flex-col items-center justify-center transition-opacity duration-300 z-40 bg-gradient-to-r from-[#1D2801] via-[#324503] to-[#1D2801] ${
               menuOpen
                 ? "opacity-100 pointer-events-auto"
                 : "opacity-0 pointer-events-none"
             }`}
           >
+            {/* Close Button */}
+            <button
+              onClick={() => setMenuOpen(false)}
+              className="absolute  text-[#FDF4DC] transition-colors bg-[#EB2D26] border-[#151D00] rounded-full h-[50px] w-[100px]  font-CaesarDressingRegular text-[20px]  top-5 right-5 hover:scale-110"
+            >
+              Close
+            </button>
+
             <div className="flex flex-col space-y-4">
               {navItems.map((item) => (
                 <NavButton

@@ -69,9 +69,9 @@ export default function RoadMap() {
         </div>
       </div>
 
-      <div className="flex flex-col items-center w-full 2xl:mt-[100px] mt-[10px]">
+      {/* <div className="flex flex-col items-center w-full 2xl:mt-[100px] mt-[10px]"> */}
         {/* Top green blocks */}
-        <div className="w-full">
+        {/* <div className="w-full">
           <Marquee gradient={false} speed={50} direction="right" autoFill>
             <div className="flex gap-2 py-2">
               {greenBlocks.map((_, index) => (
@@ -82,10 +82,10 @@ export default function RoadMap() {
               ))}
             </div>
           </Marquee>
-        </div>
+        </div> */}
 
         {/* Social media cards */}
-        <div className="py-4  2xl:w-[1643px] flex ">
+        {/* <div className="py-4  2xl:w-[1643px] flex ">
           <Marquee gradient={false} speed={50} autoFill >
             <div className="flex ">
               {socialItems.map((item, index) => (
@@ -101,10 +101,10 @@ export default function RoadMap() {
               ))}
             </div>
           </Marquee>
-        </div>
+        </div> */}
 
         {/* Bottom green blocks */}
-        <div className="w-full">
+        {/* <div className="w-full">
           <Marquee gradient={false} speed={50} direction="right" autoFill>
             <div className="flex gap-2 py-2">
               {greenBlocks.map((_, index) => (
@@ -116,7 +116,7 @@ export default function RoadMap() {
             </div>
           </Marquee>
         </div>
-      </div>
+      </div> */}
 
       <div className="text-[#FFFFFF] 2xl:mt-[50px] mt-[20px] mb-[40px]">
         <p className="font-TsukimiRoundedRegular text-[18px]">

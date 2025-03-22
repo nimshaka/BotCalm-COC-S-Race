@@ -22,7 +22,7 @@ type CardProps = {
 
 const CockCard: React.FC<CardProps> = ({ cockImages }) => {
   return (
-    <div className="relative overflow-hidden cursor-pointer 2xl:w-[318px] 2xl:h-[330px] flex w-[226px] h-[220px] sm:w-[230px] sm:h-[225px] md:w-[240px] md:h-[235px] lg:w-[260px] lg:h-[270px] xl:w-[290px] xl:h-[310px]">
+    <div className="relative overflow-hidden cursor-pointer 2xl:w-[318px] 2xl:h-[330px] flex w-[226px] h-[220px] sm:w-[230px] sm:h-[225px] md:w-[240px] md:h-[235px] lg:w-[260px] lg:h-[270px] xl:w-[290px] xl:h-[310px] hover:scale-90">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-center bg-cover rounded-3xl"
